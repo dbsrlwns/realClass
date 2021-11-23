@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리얼클래스 회원가입</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+    <div class="subBG"></div>
+    <div class="headerBG"></div>
+    <header id="header" class="flex-container">
+        <div class="headerLogo">
+            <a href="#">
+                <img src="images/logo.png" alt="d">
+                <img src="images/logo_Txt.png" alt="헤더로고">
+            </a>
+        </div>
+
+        <nav id="gnb">
+            <ul id="mainMenu" class="flex-container">
+                <li class="mainLi">
+                    <a href="#">패키지 수강</a>
+                    <div id="subMenu">
+                        <div class="inner">
+                            <div class="left">
+                                <div class="first">
+                                    <h3>2021년 신규 패키지</h3>
+                                    <ul>
+                                        <li><a href="#">올인원 패키지<span>BEST</span></a></li>
+                                        <li><a href="#">실속 패키지<span>SALE</span></a></li>
+                                    </ul>
+                                </div>
+                
+                                <div class="second">
+                                    <h3>장르별 패키지</h3>
+                                    <ul>
+                                        <li><a href="#">애니패키지</a></li>
+                                        <li><a href="#">미드패키지</a></li>
+                                        <li><a href="#">영드패키지</a></li>
+                                        <li><a href="#">영화패키지</a></li>
+                                        <li><a href="#">팝송패키지</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                
+                            <div class="right">
+                                <img src="images/gnb-pc-banner@2x.png" alt="배너">
+                                <p>[21세기 영어 40% 할인]</p>
+                                <p>리얼클래스가 만든 진짜 키즈 영어</p>
+                                <a href="#">자세히 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mainLi"><a href="#">전체 클래스</a></li>
+                <li class="mainLi"><a href="#">학습법</a></li>
+                <li class="mainLi"><a href="#">리얼 후기</a></li>
+            </ul>
+        </nav>
+
+        <div id="lnb">
+            <a href="#" class="customer"><img src="images/customer_Icon.png" alt="고객지원">고객지원</a>
+            <a href="#" class="login"><img src="images/login_Icon.png" alt="로그인">로그인</a>
+            <a href="#" class="join">가입하기</a>
+        </div>
+    </header>
+
+    <main id="main">
+        
+        <div class="main_left">
+            <div class="main_header">
+                <h3>회원가입</h3>
+                <p>SNS계정으로 간편하게 회원가입</p>
+                <div class="sns">
+                    <a href="#" class="naver"></a>
+                    <a href="#" class="kakao"></a>
+                    <a href="#" class="apple"></a>
+                </div>
+            </div>
+
+            <div class="login_form">
+                <form action="#" method="GET">
+      
+                    <div class="int-area">
+                      <input type="id" name="email" id="email" required>
+                      <label for="email">이메일</label>
+                      <p></p>
+                    </div>
+                    <div class="int-area">
+                      <input type="password" name="pw" id="pw" required>
+                      <label for="pw">비밀번호</label>
+                      <p></p>
+                    </div>
+                    <div class="int-area">
+                        <input type="text" name="phone" id="phone" required>
+                        <label for="phone">휴대전화 번호(숫자만)</label>
+                        <a href="#">인증번호 요청</a>
+                        <p></p>
+                    </div>
+                    <div class="int-area">
+                        <input type="tel" name="phone_chk" id="phone_chk" required disabled>
+                        <label for="phone_chk">인증번호</label>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" id="all" class="ag">
+                        <label for="all">약관에 모두 동의</label>
+                        <hr>
+                        <input type="checkbox" id="first" name="chk" class="ag">
+                        <label for="first">[필수]이용약관 동의</label><br>
+                        <input type="checkbox" id="second" name="chk" class="ag">
+                        <label for="second">[필수]개인정보 수집 및 이용 동의</label><br>
+                        <input type="checkbox" id="third" name="chk" class="ag">
+                        <label for="third">[필수]제3자 정보 제공 동의</label><br>
+                        <input type="checkbox" id="fourth" name="chk" class="ag">
+                        <label for="fourth">[선택]마케팅정보 수신동의</label>
+                        <div class="sale_txt">수신 동의하고 <span>추가 할인 혜택</span>을 받아보세요!</div>
+                        <hr>
+                    </div>
+                    <div class="btn_area">
+                      <button id="btn" type="submit">회원 가입하기</button>
+                    </div>
+
+                    <div class="bottom">
+                        <span>이미 계정이 있으신가요?</span>
+                        <a href="#">로그인</a>
+                    </div>
+            
+                </form>
+            </div>
+        </div>
+
+        <div class="main_right">
+            <img src="images/character.jpg" alt="캐릭터">
+        </div>
+
+
+
+    </main>
+</body>
+
+</html>
